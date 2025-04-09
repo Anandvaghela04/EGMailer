@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #3a0ca3, #7209b7, #f72585);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .card-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    animation: popIn 1s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .card-inner {
+    width: 100%;
+    position: relative;
+  }
+
+  .card-inner .form-box {
+    display: none;
+  }
+
+  .card-inner .form-box.active {
+    display: block;
+  }
+
+  .form-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    color: white;
+  }
+
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .form-box input {
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+
+  .form-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .form-box input:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  .form-box button {
+    background: linear-gradient(to right, #7209b7, #4361ee);
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .form-box button:hover {
+    background: linear-gradient(to right, #4361ee, #7209b7);
+  }
+
+  .form-box p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+
+  .form-box p span {
+    color: #fcbf49;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  @media (max-width: 576px) {
+    .form-box {
+      padding: 30px 20px;
+    }
+
+    .form-box h2 {
+      font-size: 1.5rem;
+    }
+  }

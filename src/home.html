@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EGMailer | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
+    .hero {
+      background: linear-gradient(to right, #7209b7, #4361ee);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .features .card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+    .features .card:hover {
+      transform: translateY(-10px);
+    }
+    .features .card img {
+      height: 150px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .cta {
+      background: #f72585;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .footer {
+      background: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+    .footer a {
+      color: #fcbf49;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">EGMailer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how">Workflow</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-light ms-2" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Simplify Your Email Campaigns</h1>
+      <p class="lead">EGMailer helps you send, track, and manage emails easily and efficiently.</p>
+      <a href="#" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features py-5" id="features">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h2 class="fw-bold">Our Features</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="/image/profile.png" class="card-img-top" alt="Compose">
+            <div class="card-body text-center">
+              <h5 class="card-title">Compose Emails</h5>
+              <p class="card-text">Create engaging email content easily with our rich editor.</p>
+              <a href="#" class="btn btn-primary btn-sm">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="/image/profile.png" class="card-img-top" alt="Manage">
+            <div class="card-body text-center">
+              <h5 class="card-title">Manage Lists</h5>
+              <p class="card-text">Import, edit, and organize your mailing contacts with ease.</p>
+              <a href="#" class="btn btn-primary btn-sm">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="/image/profile.png" class="card-img-top" alt="Templates">
+            <div class="card-body text-center">
+              <h5 class="card-title">Email Templates</h5>
+              <p class="card-text">Use professional templates to save time and boost impact.</p>
+              <a href="#" class="btn btn-primary btn-sm">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="/image/profile.png" class="card-img-top" alt="Analytics">
+            <div class="card-body text-center">
+              <h5 class="card-title">Analytics</h5>
+              <p class="card-text">Track open rates, click-throughs, and campaign performance.</p>
+              <a href="#" class="btn btn-primary btn-sm">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works Section -->
+  <section class="py-5 bg-white" id="how">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h2 class="fw-bold">How It Works</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3 text-center">
+          <h5>1. Sign Up</h5>
+          <p>Create your account and log in to your dashboard.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h5>2. Add Contacts</h5>
+          <p>Upload or manually add your recipients.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h5>3. Design & Send</h5>
+          <p>Write or choose a template and send your campaign.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h5>4. View Reports</h5>
+          <p>Monitor performance with real-time analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="fw-bold">Start Sending Emails Now</h2>
+      <p class="mb-4">Join EGMailer and take your email communication to the next level.</p>
+      <a href="#" class="btn btn-light btn-lg">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 EGMailer. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
